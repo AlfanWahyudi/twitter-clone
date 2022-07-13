@@ -87,3 +87,58 @@ header .wrapper {
 .title {
   font-size: 1.25rem;
 }
+
+/* Tweet Form Section */
+.tweet-form {
+  padding: 0.25rem 0;
+  width: auto;
+  height: auto;
+}
+
+.form {
+  width: auto;
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.form-profile-icon {
+  min-width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.input-tweet {
+  min-height: 52px;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border: none;
+  color: #0f1419;
+}
+
+.form-bottom-items {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.left-items {
+  display: flex;
+}
+
+.select-item {
+  min-width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.btn-tweet {
+  background-color: #8FCEF5;
+  color: white;
+  padding: 0 16px;
+}
