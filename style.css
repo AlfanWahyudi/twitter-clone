@@ -60,6 +60,8 @@ nav ul {
   height: auto;
 }
 
+/* Main Section */
+
 main {
   background: rgb(255, 255, 255);
   height: 2000px;
@@ -70,4 +72,18 @@ main {
 
 .wrapper {
   padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+header .wrapper {
+  width: auto;
+  height: 3.3125rem;
+}
+
+.title {
+  font-size: 1.25rem;
 }
