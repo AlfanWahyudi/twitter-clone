@@ -29,13 +29,15 @@ body {
   background: none;
   border: none;
   padding: 0.3rem;
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
-.btn-home {
+.btn-home, .btn-nav, .btn-nav-tweet {
   width: 50px;
+  height: 50px;
 }
+
 
 .btn-account {
   padding: 0.7rem;
@@ -50,6 +52,24 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1em;
+}
+
+.btn-top-tweet {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn-tweet {
+  height: 36px;
+  background-color: #8FCEF5;
+  color: white;
+  padding: 0 20px;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -70,17 +90,8 @@ body {
   background-color: #1e96e0;
 }
 
-.btn-tweet {
-  background-color: #8FCEF5;
-  color: white;
-  padding: 0 16px;
-}
-
-.btn-top-tweet {
-  padding: 0;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+.btn-tweet:hover {
+  cursor: default;
 }
 
 /* Navigation bar */
@@ -155,7 +166,7 @@ main {
 }
 
 /* Header */
-header {
+header .wrapper {
   height: 3.3125rem;
 }
 
@@ -177,6 +188,10 @@ header {
   height: auto;
 }
 
+.tweet-form .wrapper {
+  display: block;
+}
+
 .form {
   width: auto;
   min-height: 100px;
@@ -185,19 +200,29 @@ header {
   gap: 15px;
 }
 
-.form-profile-icon {
+.form-profile {
   min-width: 48px;
   height: 48px;
-  border: 1px solid black;
   border-radius: 25px;
 }
+
+.form-profile:hover {
+  cursor: pointer;
+  filter: grayscale(20%);
+}
+
 .input-tweet {
   min-height: 52px;
   padding: 0.75rem 0;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-family: inherit;
   border: none;
-  color: #0f1419;
+  color: var(--black);
+}
+
+.input-tweet:focus {
+  font-family: inherit;
+  outline: none;
 }
 
 .form-bottom-items {
@@ -210,11 +235,31 @@ header {
 
 .left-items {
   display: flex;
+  column-gap: 3px;
 }
 
 .select-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 34px;
   height: 34px;
-  border: 1px solid black;
   border-radius: 25px;
+  font-size: 1.125em;
+}
+
+.select-item {
+  color: var(--blue);
+}
+
+.select-item-disabled {
+  color: #add9f5;
+}
+
+.select-item:hover {
+  cursor: pointer;
+}
+
+.select-item-disabled:hover {
+  cursor: default;
 }
