@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
 :root {
   --blue : #1DA1F2;
   --light-blue : #e6f3fc;
-  --black : #14171a;
+  --black : #0f1419;
   --dark-gray : #657786;
   --light-gray : #eeeeee;
   --extra-light-gray : #ececec;
@@ -18,7 +20,7 @@ body {
   grid-template-columns: 4.25rem 1fr;
   background: #fff;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 
@@ -59,13 +61,26 @@ body {
   background: var(--light-blue);
 }
 
-.btn-nav:hover, .btn-account:hover {
+.btn-nav:hover, .btn-account:hover{
   border-radius: 50%;
   background: var(--extra-light-gray);
 }
 
 .btn-nav-tweet:hover {
   background-color: #1e96e0;
+}
+
+.btn-tweet {
+  background-color: #8FCEF5;
+  color: white;
+  padding: 0 16px;
+}
+
+.btn-top-tweet {
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 /* Navigation bar */
@@ -123,7 +138,6 @@ nav ul {
 }
 
 /* Main Section */
-
 main {
   background: rgb(255, 255, 255);
   height: 2000px;
@@ -141,13 +155,19 @@ main {
 }
 
 /* Header */
-header .wrapper {
-  width: auto;
+header {
   height: 3.3125rem;
 }
 
 .title {
-  font-size: 1.25rem;
+  width: 100%;
+  font-size: 1.1875rem;
+  font-weight: 600;
+}
+
+.top-tweet-icon {
+  width: 22px;
+  height: 22px;
 }
 
 /* Tweet Form Section */
@@ -197,10 +217,4 @@ header .wrapper {
   height: 34px;
   border: 1px solid black;
   border-radius: 25px;
-}
-
-.btn-tweet {
-  background-color: #8FCEF5;
-  color: white;
-  padding: 0 16px;
 }
