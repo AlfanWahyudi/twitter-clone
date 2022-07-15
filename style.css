@@ -306,6 +306,7 @@ header .wrapper {
 .left-items {
   display: flex;
   column-gap: 3px;
+  margin-left: -5px;
 }
 
 .select-item {
@@ -318,19 +319,22 @@ header .wrapper {
   font-size: 1.125em;
 }
 
-.select-item {
+.select-item > i {
+  font-size: 16px;
   color: var(--blue);
 }
 
-.select-item-disabled {
+.select-item-disabled > i {
   color: #add9f5;
 }
 
 .select-item:hover {
   cursor: pointer;
+  background-color: var(--light-blue);
 }
 
 .select-item-disabled:hover {
+  background-color: #fff;
   cursor: default;
 }
 
