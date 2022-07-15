@@ -2,11 +2,16 @@
 
 :root {
   --blue : #1DA1F2;
-  --light-blue : #e6f3fc;
+  --red : #F71A7F;
+  --green : #17B97F;
   --black : #0f1419;
+  --gray : #536471;
   --dark-gray : #657786;
-  --light-gray : #eeeeee;
-  --extra-light-gray : #ececec;
+  --light-blue : #dfeffc;
+  --light-red : #F7E0EB;
+  --light-green : #DEF1EB;
+  --light-gray : #ececec;
+  --extra-light-gray : #f5f5f5;
 }
 
 * {
@@ -37,7 +42,6 @@ body {
   width: 50px;
   height: 50px;
 }
-
 
 .btn-account {
   padding: 0.7rem;
@@ -72,6 +76,24 @@ body {
   font-weight: bold;
 }
 
+.btn-article-more {
+  padding: 7px 9px;
+  margin: -8px;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.btn-article {
+  padding: 0;
+  gap: 8px;
+  font-size: 0.9375rem;
+  color: var(--dark-gray);
+}
+
+.btn-article .icon {
+  padding: 2px;
+}
+
 .btn:hover {
   cursor: pointer;
 }
@@ -83,7 +105,7 @@ body {
 
 .btn-nav:hover, .btn-account:hover{
   border-radius: 50%;
-  background: var(--extra-light-gray);
+  background: var(--light-gray);
 }
 
 .btn-nav-tweet:hover {
@@ -93,6 +115,45 @@ body {
 .btn-tweet:hover {
   cursor: default;
 }
+
+.btn-article-more:hover {
+  border-radius: 50%;
+  background: var(--light-blue);
+  color: var(--blue);
+}
+
+.btn-article--comment:hover, .btn-article--share:hover {
+  color: var(--blue);
+}
+
+.btn-article--retweet:hover {
+  color: var(--green);
+}
+
+.btn-article--like:hover {
+  color: var(--red);
+}
+
+.btn-article--comment:hover > .icon, .btn-article--share:hover > .icon {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+}
+
+.btn-article--retweet:hover > .icon {
+  background-color: var(--light-green);
+  border-radius: 50%;
+}
+
+.btn-article--like:hover > .icon {
+  background-color: var(--light-red);
+  border-radius: 50%;
+}
+
+/* .btn-article .icon:hover {
+  background: #cecece;
+  border-radius: 50%;
+} */
+
 
 /* Navigation bar */
 .nav-bar {
@@ -182,8 +243,12 @@ header .wrapper {
 }
 
 .divider {
-  margin: 5px 0;
+  margin: 4px 0;
   border-top: 1.5px solid #EFF3F4;
+}
+
+.divider--m0 {
+  margin: 0;
 }
 
 /* Tweet Form Section */
@@ -267,4 +332,93 @@ header .wrapper {
 
 .select-item-disabled:hover {
   cursor: default;
+}
+
+/* Tweet Section */
+.card {
+  display: grid;
+  width: auto;
+  min-height: 48px;
+}
+.card:hover {
+  cursor: pointer;
+  background: var(--extra-light-gray);
+}
+.card-show-tweet {
+  padding: 0.8em 0;
+}
+
+.card-show-tweet .btn-show-tweet {
+  padding: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--blue);
+}
+
+.card-article {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  grid-template-columns: minmax(65px, auto) 1fr;
+  align-items: start;
+}
+
+.article-left-item {
+  justify-self: start;
+}
+
+.article-right-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-right-item .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.article-profile {
+  flex-basis: 80%;
+}
+
+.profile-name, .id-tweet {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.id-tweet {
+  margin-left: 4px;
+  color: var(--gray);
+  font-weight: normal;
+}
+
+.article-tweet > * {
+  font-size: 0.9375rem;
+  line-height: 1.45em;
+  color: var(--black);
+}
+
+.bottom {
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn-article .icon {
+  padding: 9px;
+  margin: -7px;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.bottom .count {
+  padding-left: 2px;
+  font-size: 0.8125rem;
 }
