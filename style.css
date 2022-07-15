@@ -226,6 +226,10 @@ main {
   align-items: center;
 }
 
+header, .tweet-form, .tweets {
+  max-width: 598px;
+}
+
 /* Header */
 header .wrapper {
   height: 3.3125rem;
