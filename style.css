@@ -22,12 +22,11 @@
 
 body {
   display: grid;
-  grid-template-columns: 4.25rem 1fr;
+  grid-template-columns: 4.25rem auto;
   background: #fff;
   overflow-x: hidden;
   font-family: 'Libre Franklin', sans-serif;
 }
-
 
 /* Buttons */
 .btn {
@@ -149,12 +148,6 @@ body {
   border-radius: 50%;
 }
 
-/* .btn-article .icon:hover {
-  background: #cecece;
-  border-radius: 50%;
-} */
-
-
 /* Navigation bar */
 .nav-bar {
   width: 4.25rem;
@@ -216,6 +209,8 @@ main {
   grid-column: 2 / 3;
   border-left: 1.5px solid #EFF3F4;
   border-right: 1.5px solid #EFF3F4;
+  display: grid;
+  grid-template-rows: 3.3125rem auto 1fr;
 }
 
 .wrapper {
@@ -231,6 +226,17 @@ header, .tweet-form, .tweets {
 }
 
 /* Header */
+header {
+  width: 86%;
+  position: fixed;
+  z-index: 999;
+  background-color: #fffffff6;
+}
+
+header:hover {
+  cursor: pointer;
+}
+
 header .wrapper {
   height: 3.3125rem;
 }
@@ -257,6 +263,7 @@ header .wrapper {
 
 /* Tweet Form Section */
 .tweet-form {
+  grid-row: 2 / 3;
   padding: 0.25rem 0;
   width: auto;
   height: auto;
@@ -343,6 +350,10 @@ header .wrapper {
 }
 
 /* Tweet Section */
+.tweets {
+  grid-row: 3 / 4;
+}
+
 .card {
   display: grid;
   width: auto;
