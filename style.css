@@ -401,6 +401,13 @@ header .wrapper {
   color: var(--black);
 }
 
+.tweet-images > img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #CFD9DE;
+}
+
 .bottom {
   height: 32px;
   display: flex;
