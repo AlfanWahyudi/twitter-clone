@@ -361,7 +361,8 @@ header .wrapper {
 .card-article {
   padding-top: 12px;
   padding-bottom: 12px;
-  grid-template-columns: minmax(65px, auto) 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
   align-items: start;
 }
 
@@ -405,9 +406,27 @@ header .wrapper {
   justify-self: start;
 }
 
+.article-left-item .retweet-icon {
+  color: var(--dark-gray);
+  font-size: 0.9375rem;
+  text-align: right;
+  margin-bottom: 2px;
+}
+
 .article-right-item {
   display: flex;
   flex-direction: column;
+}
+
+.article-right-item .retweet-profile-name {
+  color: var(--dark-gray);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.article-right-item .retweet-profile-name:hover {
+  text-decoration: underline;
 }
 
 .article-right-item .top {
@@ -421,7 +440,6 @@ header .wrapper {
 .article-profile {
   flex-basis: 80%;
 }
-
 
 .profile-name, .id-tweet {
   font-size: 15px;
