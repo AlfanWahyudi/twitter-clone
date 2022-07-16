@@ -17,349 +17,356 @@
 		></script>
 	</head>
 	<body>
-		<div class="nav-bar">
-			<div class="top-items">
-				<button class="btn btn-home">
-					<i class="fa-brands fa-twitter"></i>
-				</button>
-				<nav>
-					<ul>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-solid fa-house-user fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-solid fa-magnifying-glass fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-regular fa-bell fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-regular fa-envelope fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-regular fa-bookmark fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-regular fa-rectangle-list fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
-								<i class="fa-regular fa-user fa-brand"></i>
-							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav">
+		<header>
+			<div class="nav-bar">
+				<div class="top-items">
+					<button class="btn btn-home">
+						<i class="fa-brands fa-twitter"></i>
+					</button>
+					<nav>
+						<ul>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-solid fa-house-user fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-solid fa-magnifying-glass fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-regular fa-bell fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-regular fa-envelope fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-regular fa-bookmark fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-regular fa-rectangle-list fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<i class="fa-regular fa-user fa-brand"></i>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav">
+									<img
+										class="nav-icon"
+										src="./assets/media/icons/more.png"
+										alt=""
+									/>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-nav-tweet">
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="bottom-items">
+					<button class="btn btn-account">
+						<img
+							class="profile-img"
+							src="./assets/media/images/profile.jpg"
+							alt="photo profile"
+						/>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-content">
+				<header>
+					<div class="wrapper">
+						<h1 class="title">Home</h1>
+						<div class="top-tweet">
+							<button class="btn btn-top-tweet">
 								<img
-									class="nav-icon"
-									src="./assets/media/icons/more.png"
+									class="top-tweet-icon"
+									src="./assets/media/icons/multiple-star.PNG"
 									alt=""
 								/>
 							</button>
-						</li>
-						<li>
-							<button class="btn btn-nav-tweet">
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="bottom-items">
-				<button class="btn btn-account">
-					<img
-						class="profile-img"
-						src="./assets/media/images/profile.jpg"
-						alt="photo profile"
-					/>
-				</button>
-			</div>
-		</div>
-		<main>
-			<header>
-				<div class="wrapper">
-					<h1 class="title">Home</h1>
-					<div class="top-tweet">
-						<button class="btn btn-top-tweet">
+						</div>
+					</div>
+				</header>
+				<!-- aya form -->
+				<section id="tweetForm" class="tweet-form">
+					<div class="wrapper">
+						<div class="form">
 							<img
-								class="top-tweet-icon"
-								src="./assets/media/icons/multiple-star.PNG"
-								alt=""
+								class="form-profile profile-img"
+								src="./assets/media/images/profile.jpg"
+								alt="photo profile"
 							/>
-						</button>
-					</div>
-				</div>
-			</header>
-			<!-- aya form -->
-			<section id="tweetForm" class="tweet-form">
-				<div class="wrapper">
-					<div class="form">
-						<img
-							class="form-profile profile-img"
-							src="./assets/media/images/profile.jpg"
-							alt="photo profile"
-						/>
-						<form action="">
-							<input
-								class="input-tweet"
-								type="text"
-								value=""
-								placeholder="What's happening?"
-							/>
-							<div class="form-bottom-items">
-								<div class="left-items">
-									<div class="select-item">
-										<i class="fa-regular fa-image"></i>
+							<form action="">
+								<input
+									class="input-tweet"
+									type="text"
+									value=""
+									placeholder="What's happening?"
+								/>
+								<div class="form-bottom-items">
+									<div class="left-items">
+										<div class="select-item">
+											<i class="fa-regular fa-image"></i>
+										</div>
+										<div class="select-item">
+											<i class="fa-solid fa-file-circle-plus"></i>
+										</div>
+										<div class="select-item">
+											<i class="fa-regular fa-face-smile"></i>
+										</div>
+										<div class="select-item select-item-disabled">
+											<i class="fa-solid fa-location-dot"></i>
+										</div>
 									</div>
-									<div class="select-item">
-										<i class="fa-solid fa-file-circle-plus"></i>
-									</div>
-									<div class="select-item">
-										<i class="fa-regular fa-face-smile"></i>
-									</div>
-									<div class="select-item select-item-disabled">
-										<i class="fa-solid fa-location-dot"></i>
+									<div class="right-items">
+										<button class="btn btn-tweet" type="submit" disabled>
+											Tweet
+										</button>
 									</div>
 								</div>
-								<div class="right-items">
-									<button class="btn btn-tweet" type="submit" disabled>
-										Tweet
-									</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<!-- begin tweet -->
+				<section id="tweets" class="tweets">
+					<div class="divider"></div>
+					<div class="card card-show-tweet">
+						<button class="btn btn-show-tweet">Show 52 Tweets</button>
+					</div>
+					<article class="card card-article wrapper divider divider--m0">
+						<div class="article-left-item">
+							<img
+								class="form-profile profile-img"
+								src="./assets/media/images/profile.jpg"
+								alt="photo profile"
+							/>
+						</div>
+						<div class="article-right-item">
+							<div class="top">
+								<div class="article-profile">
+									<h2 class="profile-name">
+										Alfan Wahyudi <span class="id-tweet">@Alfan</span>
+									</h2>
+								</div>
+								<button class="btn btn-article-more">
+									<i class="fa-solid fa-ellipsis"></i>
+								</button>
+							</div>
+							<div class="middle article-tweet">
+								<p>
+									M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective
+									tp 👉🏽👈🏽
+								</p>
+							</div>
+							<div class="bottom">
+								<button class="btn btn-article btn-article--comment">
+									<i class="fa-regular fa-comment icon"></i>
+									<span class="count">120</span>
+								</button>
+								<button class="btn btn-article btn-article--retweet">
+									<i class="fa-solid fa-retweet icon"></i>
+									<span class="count">50</span>
+								</button>
+								<button class="btn btn-article btn-article--like">
+									<i class="fa-regular fa-heart icon"></i>
+									<span class="count">300</span>
+								</button>
+								<button class="btn btn-article btn-article--share">
+									<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="card card-article wrapper divider divider--m0">
+						<div class="article-left-item">
+							<div class="retweet-icon">
+								<i class="fa-solid fa-retweet"></i>
+							</div>
+							<img
+								class="form-profile profile-img"
+								src="./assets/media/images/profile.jpg"
+								alt="photo profile"
+							/>
+						</div>
+						<div class="article-right-item">
+							<div class="retweet-profile-name">
+								<p><span>Valorant Indonesia</span> Retweet</p>
+							</div>
+							<div class="top">
+								<div class="article-profile">
+									<h2 class="profile-name">
+										Alfan Wahyudi <span class="id-tweet">@Alfan</span>
+									</h2>
+								</div>
+								<button class="btn btn-article-more">
+									<i class="fa-solid fa-ellipsis"></i>
+								</button>
+							</div>
+							<div class="middle article-tweet">
+								<p>
+									M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective
+									tp 👉🏽👈🏽
+								</p>
+							</div>
+							<div class="bottom">
+								<button class="btn btn-article btn-article--comment">
+									<i class="fa-regular fa-comment icon"></i>
+									<span class="count">120</span>
+								</button>
+								<button class="btn btn-article btn-article--retweet">
+									<i class="fa-solid fa-retweet icon"></i>
+									<span class="count">50</span>
+								</button>
+
+								<button class="btn btn-article btn-article--like">
+									<i class="fa-regular fa-heart icon"></i>
+									<span class="count">300</span>
+								</button>
+								<button class="btn btn-article btn-article--share">
+									<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="card card-article wrapper divider divider--m0">
+						<div class="article-left-item">
+							<img
+								class="form-profile profile-img"
+								src="./assets/media/images/profile.jpg"
+								alt="photo profile"
+							/>
+						</div>
+						<div class="article-right-item">
+							<div class="top">
+								<div class="article-profile">
+									<h2 class="profile-name">
+										Alfan Wahyudi <span class="id-tweet">@Alfan</span>
+									</h2>
+								</div>
+								<button class="btn btn-article-more">
+									<i class="fa-solid fa-ellipsis"></i>
+								</button>
+							</div>
+							<div class="middle article-tweet">
+								<p>
+									M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective
+									tp 👉🏽👈🏽
+								</p>
+								<br />
+								<figure class="tweet-images">
+									<img src="./assets/media/images/dog.jpg" alt="" />
+								</figure>
+							</div>
+							<div class="bottom">
+								<button class="btn btn-article btn-article--comment">
+									<i class="fa-regular fa-comment icon"></i>
+									<span class="count">120</span>
+								</button>
+								<button class="btn btn-article btn-article--retweet">
+									<i class="fa-solid fa-retweet icon"></i>
+									<span class="count">50</span>
+								</button>
+
+								<button class="btn btn-article btn-article--like">
+									<i class="fa-regular fa-heart icon"></i>
+									<span class="count">300</span>
+								</button>
+								<button class="btn btn-article btn-article--share">
+									<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="card card-article wrapper divider divider--m0">
+						<div class="article-left-item">
+							<img
+								class="form-profile profile-img"
+								src="./assets/media/images/profile.jpg"
+								alt="photo profile"
+							/>
+						</div>
+						<div class="article-right-item">
+							<div class="top">
+								<div class="article-profile">
+									<h2 class="profile-name">
+										Alfan Wahyudi <span class="id-tweet">@Alfan</span>
+									</h2>
+								</div>
+								<button class="btn btn-article-more">
+									<i class="fa-solid fa-ellipsis"></i>
+								</button>
+							</div>
+							<div class="middle article-tweet">
+								<p>
+									M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective
+									tp 👉🏽👈🏽
+								</p>
+								<br />
+								<div class="card card-article--other">
+									<article>
+										<div class="article-profile--other">
+											<img
+												class="profile-img--other"
+												src="./assets/media/images/profile.jpg"
+												alt=""
+											/>
+											<h2 class="profile-name">
+												Hilda <span class="id-tweet">@hilda</span>
+											</h2>
+										</div>
+										<div class="article-tweet--other">
+											<p>Concept Compesation & Benefit 3P.</p>
+											<p>Pray for Position,</p>
+											<p>Pray for Performance,</p>
+											<p>Pray for Position.</p>
+										</div>
+										<button class="btn btn-show-thread">
+											Show this thread
+										</button>
+									</article>
 								</div>
 							</div>
-						</form>
-					</div>
-				</div>
-			</section>
-			<!-- begin tweet -->
-			<section id="tweets" class="tweets">
-				<div class="divider"></div>
-				<div class="card card-show-tweet">
-					<button class="btn btn-show-tweet">Show 52 Tweets</button>
-				</div>
-				<article class="card card-article wrapper divider divider--m0">
-					<div class="article-left-item">
-						<img
-							class="form-profile profile-img"
-							src="./assets/media/images/profile.jpg"
-							alt="photo profile"
-						/>
-					</div>
-					<div class="article-right-item">
-						<div class="top">
-							<div class="article-profile">
-								<h2 class="profile-name">
-									Alfan Wahyudi <span class="id-tweet">@Alfan</span>
-								</h2>
-							</div>
-							<button class="btn btn-article-more">
-								<i class="fa-solid fa-ellipsis"></i>
-							</button>
-						</div>
-						<div class="middle article-tweet">
-							<p>
-								M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective tp
-								👉🏽👈🏽
-							</p>
-						</div>
-						<div class="bottom">
-							<button class="btn btn-article btn-article--comment">
-								<i class="fa-regular fa-comment icon"></i>
-								<span class="count">120</span>
-							</button>
-							<button class="btn btn-article btn-article--retweet">
-								<i class="fa-solid fa-retweet icon"></i>
-								<span class="count">50</span>
-							</button>
-							<button class="btn btn-article btn-article--like">
-								<i class="fa-regular fa-heart icon"></i>
-								<span class="count">300</span>
-							</button>
-							<button class="btn btn-article btn-article--share">
-								<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
-							</button>
-						</div>
-					</div>
-				</article>
-				<article class="card card-article wrapper divider divider--m0">
-					<div class="article-left-item">
-						<div class="retweet-icon">
-							<i class="fa-solid fa-retweet"></i>
-						</div>
-						<img
-							class="form-profile profile-img"
-							src="./assets/media/images/profile.jpg"
-							alt="photo profile"
-						/>
-					</div>
-					<div class="article-right-item">
-						<div class="retweet-profile-name">
-							<p><span>Valorant Indonesia</span> Retweet</p>
-						</div>
-						<div class="top">
-							<div class="article-profile">
-								<h2 class="profile-name">
-									Alfan Wahyudi <span class="id-tweet">@Alfan</span>
-								</h2>
-							</div>
-							<button class="btn btn-article-more">
-								<i class="fa-solid fa-ellipsis"></i>
-							</button>
-						</div>
-						<div class="middle article-tweet">
-							<p>
-								M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective tp
-								👉🏽👈🏽
-							</p>
-						</div>
-						<div class="bottom">
-							<button class="btn btn-article btn-article--comment">
-								<i class="fa-regular fa-comment icon"></i>
-								<span class="count">120</span>
-							</button>
-							<button class="btn btn-article btn-article--retweet">
-								<i class="fa-solid fa-retweet icon"></i>
-								<span class="count">50</span>
-							</button>
+							<div class="bottom">
+								<button class="btn btn-article btn-article--comment">
+									<i class="fa-regular fa-comment icon"></i>
+									<span class="count">120</span>
+								</button>
+								<button class="btn btn-article btn-article--retweet">
+									<i class="fa-solid fa-retweet icon"></i>
+									<span class="count">50</span>
+								</button>
 
-							<button class="btn btn-article btn-article--like">
-								<i class="fa-regular fa-heart icon"></i>
-								<span class="count">300</span>
-							</button>
-							<button class="btn btn-article btn-article--share">
-								<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
-							</button>
-						</div>
-					</div>
-				</article>
-				<article class="card card-article wrapper divider divider--m0">
-					<div class="article-left-item">
-						<img
-							class="form-profile profile-img"
-							src="./assets/media/images/profile.jpg"
-							alt="photo profile"
-						/>
-					</div>
-					<div class="article-right-item">
-						<div class="top">
-							<div class="article-profile">
-								<h2 class="profile-name">
-									Alfan Wahyudi <span class="id-tweet">@Alfan</span>
-								</h2>
-							</div>
-							<button class="btn btn-article-more">
-								<i class="fa-solid fa-ellipsis"></i>
-							</button>
-						</div>
-						<div class="middle article-tweet">
-							<p>
-								M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective tp
-								👉🏽👈🏽
-							</p>
-							<br />
-							<figure class="tweet-images">
-								<img src="./assets/media/images/dog.jpg" alt="" />
-							</figure>
-						</div>
-						<div class="bottom">
-							<button class="btn btn-article btn-article--comment">
-								<i class="fa-regular fa-comment icon"></i>
-								<span class="count">120</span>
-							</button>
-							<button class="btn btn-article btn-article--retweet">
-								<i class="fa-solid fa-retweet icon"></i>
-								<span class="count">50</span>
-							</button>
-
-							<button class="btn btn-article btn-article--like">
-								<i class="fa-regular fa-heart icon"></i>
-								<span class="count">300</span>
-							</button>
-							<button class="btn btn-article btn-article--share">
-								<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
-							</button>
-						</div>
-					</div>
-				</article>
-				<article class="card card-article wrapper divider divider--m0">
-					<div class="article-left-item">
-						<img
-							class="form-profile profile-img"
-							src="./assets/media/images/profile.jpg"
-							alt="photo profile"
-						/>
-					</div>
-					<div class="article-right-item">
-						<div class="top">
-							<div class="article-profile">
-								<h2 class="profile-name">
-									Alfan Wahyudi <span class="id-tweet">@Alfan</span>
-								</h2>
-							</div>
-							<button class="btn btn-article-more">
-								<i class="fa-solid fa-ellipsis"></i>
-							</button>
-						</div>
-						<div class="middle article-tweet">
-							<p>
-								M29 lagi banyak duit nih siapa mau traktir? Rep ya. Selective tp
-								👉🏽👈🏽
-							</p>
-							<br />
-							<div class="card card-article--other">
-								<article>
-									<div class="article-profile--other">
-										<img
-											class="profile-img--other"
-											src="./assets/media/images/profile.jpg"
-											alt=""
-										/>
-										<h2 class="profile-name">
-											Hilda <span class="id-tweet">@hilda</span>
-										</h2>
-									</div>
-									<div class="article-tweet--other">
-										<p>Concept Compesation & Benefit 3P.</p>
-										<p>Pray for Position,</p>
-										<p>Pray for Performance,</p>
-										<p>Pray for Position.</p>
-									</div>
-									<button class="btn btn-show-thread">Show this thread</button>
-								</article>
+								<button class="btn btn-article btn-article--like">
+									<i class="fa-regular fa-heart icon"></i>
+									<span class="count">300</span>
+								</button>
+								<button class="btn btn-article btn-article--share">
+									<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
+								</button>
 							</div>
 						</div>
-						<div class="bottom">
-							<button class="btn btn-article btn-article--comment">
-								<i class="fa-regular fa-comment icon"></i>
-								<span class="count">120</span>
-							</button>
-							<button class="btn btn-article btn-article--retweet">
-								<i class="fa-solid fa-retweet icon"></i>
-								<span class="count">50</span>
-							</button>
-
-							<button class="btn btn-article btn-article--like">
-								<i class="fa-regular fa-heart icon"></i>
-								<span class="count">300</span>
-							</button>
-							<button class="btn btn-article btn-article--share">
-								<i class="fa-solid fa-arrow-up-from-bracket icon"></i>
-							</button>
-						</div>
-					</div>
-				</article>
-			</section>
+					</article>
+				</section>
+			</div>
+			<aside></aside>
 		</main>
 	</body>
 </html>
