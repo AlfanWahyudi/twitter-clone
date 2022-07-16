@@ -331,12 +331,15 @@ main {
   min-width: 34px;
   height: 34px;
   border-radius: 25px;
-  font-size: 1.125em;
 }
 
 .select-item > i {
-  font-size: 16px;
+  font-size: 1.125rem;
   color: var(--blue);
+}
+
+.select-item--hidden {
+  display: none;
 }
 
 .select-item-disabled > i {
