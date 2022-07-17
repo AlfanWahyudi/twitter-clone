@@ -533,6 +533,8 @@ main {
     grid-template-columns: 14% auto;
   }
 
+  /* Navigation Bar */
+
   body > header {
     display: flex;
     justify-content: end;
@@ -598,8 +600,25 @@ main {
     padding: 0.5em;
   }
 
-  .main-content header .wrapper img {
+
+  /* Main */
+  
+  .main-content > header {
+    width: 86%;
+  }
+
+  .main-content > header .wrapper > img {
     display: none;
+  }
+
+  .main-content > header .wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .main-content > header h1 {
+    font-size: 1.25rem;
   }
 
 }
