@@ -185,7 +185,6 @@ nav ul li:nth-child(9) {
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   list-style: none;
 }
@@ -526,4 +525,81 @@ main {
 .bottom .count {
   padding-left: 2px;
   font-size: 0.8125rem;
+}
+
+/* Responsive */
+@media only screen and (min-width: 500px) {
+  body {
+    grid-template-columns: 14% auto;
+  }
+
+  body > header {
+    display: flex;
+    justify-content: end;
+    position: static;
+    z-index: 0;
+    background: none;
+  }
+
+  body header .divider {
+    display: none;
+  }
+
+  .nav-bar {
+    position: fixed;
+    width: 4.25rem;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 90vh 10vh;
+    overflow-y: auto;
+  }
+
+  .top-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3em 0;
+    gap: 5px;
+  }
+
+  .btn-nav-tweet {
+    margin-top: 15px;
+  }
+
+  .bottom-items {
+    display: block;
+    padding: .6em 0;
+    display: grid;
+    align-self: end;
+  }
+
+  nav ul li:nth-child(5),
+  nav ul li:nth-child(6),
+  nav ul li:nth-child(7),
+  nav ul li:nth-child(8)
+  {
+    display: block;
+  }
+
+  nav ul li:nth-child(9) {
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .btn-home {
+    display: block;
+  }
+
+  .btn-home, .btn-nav {
+    padding: 0.5em;
+  }
+
+  .main-content header .wrapper img {
+    display: none;
+  }
+
 }
