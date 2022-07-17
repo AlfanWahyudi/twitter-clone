@@ -668,3 +668,27 @@ main {
     border-radius: 25px;
   }
 }
+
+@media only screen and (min-width: 735px) {
+    body {
+    grid-template-columns: 17% auto;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  body {
+    grid-template-columns: 8% auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  aside {
+    max-width: 350px;
+    background: salmon;
+    flex-grow: 1;
+  }
+}
