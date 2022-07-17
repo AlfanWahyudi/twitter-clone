@@ -675,35 +675,46 @@ main {
   }
 }
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1022px) {
   body {
     grid-template-columns: 8% auto;
   }
 
   main {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2%;
   }
 
   aside {
+    display: grid;
+    grid-template-rows: 55px repeat(3, 1fr);
     max-width: 350px;
-    flex-grow: 1;
+    row-gap: 15px;
+  }
+
+  aside > section {
+    background-color: #F7F9F9;
+    color: var(--black);
+    border-radius: 15px;
+    width: 290px;
   }
 
   /* Section Search Twitter */
   .search{
-    margin-top: 5px;
+    width: 290px;
+    height: 54px;
+    padding-top: 5px;
     margin-bottom: 15px;
+    border-radius: 0;
     background-color: #fff;
     position: fixed;
     top: 0;
   }
 
   .input-search {
-    width: 290px;
     background-color: #EFF3F4;
-    border-radius: 50px;
+    border-radius: 25px;
     padding: 12px 20px;
     display: flex;
     flex-direction: row;
@@ -726,5 +737,81 @@ main {
   .input-search input:focus {
     outline: none;
     font-family: inherit;
+  }
+
+  /* Section Trending */
+  .trending {
+    grid-row: 2 / 3;
+  }
+
+  .trend-content > * {
+    padding: 12px 16px;
+  }
+
+  .trend-content > button {
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .trend-content > section:hover, .trend-content > button:hover {
+    cursor: pointer;
+    background-color: #EFF1F1;
+  }
+
+  .trend-content > button:hover {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .trend-title {
+    font-size: 1.25rem;
+  }
+
+  .card-trend {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--dark-gray);
+  }
+
+  .card-trend-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-trend-top {
+    font-size: 0.8125rem;
+  }
+
+  .card-trend-top p span {
+    margin: 0 5px;
+    font-weight: bolder;
+  }
+
+  .card-trend-top .btn-article-more {
+    height: 32px;
+  }
+
+  .card-trend-middle {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  .card-trend-bottom {
+    font-size: 0.8125rem;
+  }
+
+  /* Section Who to Follow */
+  .suggest-follow {
+    grid-row: 3 / 4;
+  }
+
+  /* Section Detail Twitter */
+  .detail-informations-twitter {
+    grid-row: 4 / 5;
   }
 }
