@@ -41,10 +41,6 @@ body {
   height: 50px;
 }
 
-.btn-account {
-  padding: 0.7rem;
-  margin: 0;
-}
 
 .btn-nav-tweet {
   width: 54px;
@@ -236,6 +232,7 @@ main {
   width: 100%;
   top: 0;
   position: fixed;
+  z-index: 999;
   background-color: #fffffff6;
 }
 
@@ -462,28 +459,20 @@ main {
 
   .nav-bar {
     position: fixed;
-    width: 4.25rem;
+    max-width: 88px;
     display: grid;
     justify-items: center;
     grid-template-rows: 90vh 10vh;
     overflow-y: auto;
+    padding: 0 0.2em;
+    margin-top: 2px;
   }
 
   .top-items {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .btn-nav-tweet {
-    margin-top: 15px;
-  }
-
-  .bottom-items {
-    display: block;
-    padding: .6em 0;
-    display: grid;
-    align-self: end;
+    gap: 8px;
   }
 
   nav ul li:nth-child(5),
@@ -500,7 +489,7 @@ main {
 
   nav ul {
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
   }
 
   .btn-home {
@@ -509,6 +498,24 @@ main {
 
   .btn-home, .btn-nav {
     padding: 0.5em;
+  }
+
+  .btn-nav-tweet {
+    margin-top: 15px;
+  }
+
+  .bottom-items {
+    display: block;
+    padding: 1em 0;
+    display: grid;
+    align-self: end;
+  }
+
+  .bottom-items .btn-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .9em;
   }
 
 
@@ -605,17 +612,18 @@ main {
     height: 34px;
     border-radius: 25px;
   }
+
+  .tweet-form .select-item:nth-of-type(3),
+  .tweet-form .select-item:nth-of-type(5) {
+    display: none;
+  }
   
   .select-item > i {
     font-size: 1.125rem;
     color: var(--blue);
   }
   
-  .select-item--hidden {
-    display: none;
-  }
-  
-  .select-item-disabled > i {
+  .select-item--disabled > i {
     color: #add9f5;
   }
   
@@ -624,7 +632,7 @@ main {
     background-color: var(--light-blue);
   }
   
-  .select-item-disabled:hover {
+  .select-item--disabled:hover {
     background-color: #fff;
     cursor: default;
   }
@@ -634,5 +642,23 @@ main {
     margin-top: 6px;
     border-top: 1.5px solid #EFF3F4;
     grid-row: 3 / 4;
+  }
+}
+
+@media only screen and (min-width: 706px) {
+
+  body > header {
+    justify-content: end;
+  }
+
+  .tweet-form .select-item:nth-of-type(3),
+  .tweet-form .select-item:nth-of-type(5) {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 34px;
+    height: 34px;
+    border-radius: 25px;
   }
 }
