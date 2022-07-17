@@ -450,7 +450,7 @@ main {
   /* Navigation Bar */
   body > header {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: static;
     z-index: 0;
     background: none;
