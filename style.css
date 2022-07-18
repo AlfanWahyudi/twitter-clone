@@ -439,6 +439,10 @@ main {
   font-size: 0.8125rem;
 }
 
+.floating-message {
+  display: none;
+}
+
 /* Responsive */
 @media only screen and (min-width: 500px) {
   body {
@@ -924,6 +928,47 @@ main {
   .detail-informations-twitter .items  li a:hover {
     cursor: pointer;
     text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .floating-message {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 1.5%;
+    min-width: 350px;
+    min-height: 35px;
+    background-color: #fff;
+    border: 1px solid var(--light-gray);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .message-container {
+    width: auto;
+    height: 50px;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .message-container  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .btn-message {
+    max-width: 38px;
+    max-height: 38px;
+    padding: 0.6em;
+  }
+
+  .actions button > * {
+    width: 22px;
   }
 }
 
