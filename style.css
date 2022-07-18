@@ -710,6 +710,7 @@ main {
     background-color: #fff;
     position: fixed;
     top: 0;
+    z-index: 999;
   }
 
   .input-search {
@@ -786,8 +787,17 @@ main {
     font-size: 0.8125rem;
   }
 
+  .card-trend-top p{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  }
+
   .card-trend-top p span {
-    margin: 0 5px;
+    position: absolute;
+    top: -3.5px;
+    left: 11.5px;
     font-weight: bolder;
   }
 
