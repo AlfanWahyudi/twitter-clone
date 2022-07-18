@@ -210,6 +210,7 @@ nav ul {
 /* Main Section */
 main {
   background: #ffffff;
+  max-width: 1000px;
 }
 
 /* Main Content */
@@ -689,7 +690,7 @@ main {
   aside {
     display: grid;
     grid-template-rows: 55px repeat(3, 1fr);
-    max-width: 350px;
+    max-width: 348px;
     row-gap: 15px;
   }
 
@@ -848,14 +849,18 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .suggest-follow--user {
+    display: flex;
+    align-items: center;
     gap: 10px;
   }
 
-  .profile-to-follow {
-    width: 120px;
-  }
-
   .profile-to-follow > * {
+    width: 120px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -875,6 +880,7 @@ main {
   }
 
   .btn-follow {
+    max-width: 77px;
     padding: 0.5rem 1rem;
     background: var(--black);
     color: #fff;
@@ -918,5 +924,19 @@ main {
   .detail-informations-twitter .items  li a:hover {
     cursor: pointer;
     text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1113px) {
+  aside > section {
+    width: 100%;
+  }
+
+  .search{
+    width: 348px;
+  }
+
+  .profile-to-follow > * {
+    width: auto;
   }
 }
