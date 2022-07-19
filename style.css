@@ -931,7 +931,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1095px) {
+@media only screen and (min-width: 1080px) {
   .floating-message {
     display: block;
     position: fixed;
