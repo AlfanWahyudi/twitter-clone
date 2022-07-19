@@ -25,6 +25,12 @@ body {
   background: #fff;
   overflow-x: hidden;
   font-family: 'Libre Franklin', sans-serif;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+aside {
+  display: none;
 }
 
 /* Buttons */
@@ -36,21 +42,6 @@ body {
   min-height: 20px;
 }
 
-.btn-home, .btn-nav {
-  width: 50px;
-  height: 50px;
-}
-
-
-.btn-nav-tweet {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: var(--blue);
-  text-align: center;
-  color: #fff;
-  font-size: 1em;
-}
 
 .btn-top-tweet {
   width: 40px;
@@ -95,15 +86,6 @@ body {
 .btn-home:hover {
   border-radius: 50%;
   background: var(--light-blue);
-}
-
-.btn-nav:hover, .btn-account:hover{
-  border-radius: 50%;
-  background: var(--light-gray);
-}
-
-.btn-nav-tweet:hover {
-  background-color: #1e96e0;
 }
 
 .btn-tweet:hover {
@@ -167,8 +149,8 @@ body > header {
 nav ul li:nth-child(5),
 nav ul li:nth-child(6),
 nav ul li:nth-child(7),
-nav ul li:nth-child(8)
-{
+nav ul li:nth-child(8),
+nav ul li .fa-hashtag {
   display: none;
 }
 
@@ -186,18 +168,54 @@ nav ul {
   justify-content: space-around;
 }
 
+.btn-home, 
+.btn-nav {
+  padding: 1em 0.4em;
+  min-width: 50px;
+  max-height: 52px;
+  border-radius: 50%;
+}
+
+.btn-nav-tweet {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--blue);
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover > .btn-nav{
+  cursor: pointer;
+  background: var(--light-gray);
+}
+
+.btn-nav-tweet:hover {
+  background-color: #1e96e0;
+}
+
+.btn-nav-value {
+  display: none;
+}
+
+.btn-account:hover{
+  background: var(--light-gray);
+}
+
 .fa-twitter {
   font-size: 2.1em;
   color: var(--blue);
 }
 
-.fa-brand {
-  font-size: 1.5rem;
-}
-
-.nav-icon {
+.btn-nav-icon {
   width: 25px;
   height: auto;
+  font-size: 1.5rem;
 }
 
 .profile-img {
@@ -210,7 +228,6 @@ nav ul {
 /* Main Section */
 main {
   background: #ffffff;
-  max-width: 1000px;
 }
 
 /* Main Content */
@@ -446,13 +463,14 @@ main {
 /* Responsive */
 @media only screen and (min-width: 500px) {
   body {
-    grid-template-columns: 14% auto;
+    grid-template-columns: 15% auto;
   }
 
   /* Navigation Bar */
   body > header {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: static;
     z-index: 0;
     background: none;
@@ -463,13 +481,13 @@ main {
   }
 
   .nav-bar {
+    min-width: 50px;
     position: fixed;
-    max-width: 88px;
     display: grid;
     justify-items: center;
     grid-template-rows: 90vh 10vh;
     overflow-y: auto;
-    padding: 0 0.2em;
+    padding: 0 0.6em;
     margin-top: 2px;
   }
 
@@ -477,7 +495,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
   }
 
   nav ul li:nth-child(5),
@@ -494,19 +512,17 @@ main {
 
   nav ul {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    justify-content: space-between;
   }
+
 
   .btn-home {
     display: block;
   }
 
-  .btn-home, .btn-nav {
-    padding: 0.5em;
-  }
-
-  .btn-nav-tweet {
-    margin-top: 15px;
+  .btn-nav-value {
+    font-size: 1.25rem;
   }
 
   .bottom-items {
@@ -521,6 +537,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: .9em;
+    border-radius: 50%;
   }
 
 
@@ -657,11 +674,6 @@ main {
 }
 
 @media only screen and (min-width: 706px) {
-
-  body > header {
-    justify-content: end;
-  }
-
   .tweet-form .select-item:nth-of-type(3),
   .tweet-form .select-item:nth-of-type(5) {
     display: block;
@@ -682,7 +694,7 @@ main {
 
 @media only screen and (min-width: 1022px) {
   body {
-    grid-template-columns: 8% auto;
+    grid-template-columns: 10% auto;
   }
 
   main {
@@ -703,6 +715,15 @@ main {
     color: var(--black);
     border-radius: 15px;
     width: 290px;
+  }
+
+  /* Navigation Bar */
+  nav ul li .fa-hashtag {
+    display: block;
+  }
+
+  nav ul li .fa-magnifying-glass {
+    display: none;
   }
 
   /* Section Search Twitter */
@@ -983,5 +1004,79 @@ main {
 
   .profile-to-follow > * {
     width: auto;
+  }
+}
+
+@media only screen and (min-width: 1282px) {
+  body {
+    grid-template-columns: 21% auto;
+  }
+
+  body>header {
+    justify-content: start;
+    position: relative;
+  }
+
+  main {
+    column-gap: 3%;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+    justify-content: start;
+    justify-items: start;
+  }
+
+  .top-items {
+    width: 220px;
+    align-items: start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    align-items: start;
+  }
+
+  .btn-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    border-radius: 25px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .btn-home {
+    padding: 0.8em;
+    margin-left: 3px;
+  }
+
+  .btn-nav-value {
+    display: block;
+    color: var(--black);
+    font-family: "Libre Franklin", sans-serif;;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .btn-nav-tweet .btn-nav-icon {
+    display: none;
+  }
+
+  .btn-nav-tweet {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .btn-nav-tweet .btn-nav-value {
+    color: #fff;
+    font-size: 1.0625rem;
+    font-weight: bold;
   }
 }
