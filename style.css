@@ -552,7 +552,7 @@ main {
   main {
     grid-template-rows: 1fr;
   }
-  
+
   .main-content {
     display: grid;
     grid-template-rows: 53px auto 1fr;
@@ -729,7 +729,7 @@ main {
 
   /* Navigation Bar */
   nav ul li .fa-hashtag {
-    display: block;
+    display: inline-block;
   }
 
   nav ul li .fa-magnifying-glass {
