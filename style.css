@@ -549,6 +549,10 @@ main {
 
 
   /* Main */
+  main {
+    grid-template-rows: 1fr;
+  }
+  
   .main-content {
     display: grid;
     grid-template-rows: 53px auto 1fr;
@@ -705,7 +709,6 @@ main {
   }
 
   main {
-    display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2%;
   }
