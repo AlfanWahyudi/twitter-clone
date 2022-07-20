@@ -717,6 +717,7 @@ main {
     display: grid;
     grid-template-rows: 55px repeat(3, 1fr);
     max-width: 348px;
+    max-height: 1200px;
     row-gap: 15px;
   }
 
