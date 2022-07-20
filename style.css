@@ -532,12 +532,14 @@ main {
     align-self: end;
   }
 
-  .bottom-items .btn-account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .btn-account {
+    display: grid;
     padding: .9em;
     border-radius: 50%;
+  }
+
+  .btn-account span, .btn-account i {
+    display: none;
   }
 
 
@@ -1027,8 +1029,8 @@ main {
     justify-items: start;
   }
 
-  .top-items {
-    width: 220px;
+  .top-items, .bottom-items {
+    width: 230px;
     align-items: start;
   }
 
@@ -1078,5 +1080,50 @@ main {
     color: #fff;
     font-size: 1.0625rem;
     font-weight: bold;
+  }
+
+  .btn-account {
+    grid-template-areas: 
+    "img name more-icon"
+    "img username more-icon";
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  .btn-account .profile-img {
+    grid-area: img;
+  }
+
+  .btn-account span, .btn-account i {
+    display: block;
+  }
+
+  .btn-account span {
+    max-width: 115px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn-account .profile-name, .btn-account .profile-username {
+    justify-self: start;
+  }
+
+  .btn-account .profile-name {
+    grid-area: name;
+    font-weight: bold;
+    color: var(--black);
+  }
+
+  .btn-account .profile-username {
+    grid-area: username;
+    font-size: 0.9375rem;
+    color: var(--gray);
+  }
+
+  .btn-account i {
+    grid-area: more-icon;
+    font-size: 1rem;
+    justify-self: end;
   }
 }
