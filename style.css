@@ -232,13 +232,14 @@ nav ul li:hover > .btn-nav{
 /* Main Section */
 main {
   background: #ffffff;
+  display: grid;
+  grid-template-rows: 1fr 60px;
 }
 
 /* Main Content */
 .main-content {
   max-width: 600px;
   min-width: 300px;
-  height: 2000px;
   border-left: 1.5px solid #EFF3F4;
   border-right: 1.5px solid #EFF3F4;
   display: grid;
@@ -263,7 +264,7 @@ main {
   grid-template-columns: auto 1fr auto;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 22px;
 }
 
 .main-content header:hover {
