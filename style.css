@@ -218,6 +218,10 @@ nav ul li:hover > .btn-nav{
   font-size: 1.5rem;
 }
 
+.btn-nav-tweet .btn-nav-icon {
+  font-size: 1rem;
+}
+
 .profile-img {
   width: 40px;
   height: 40px;
