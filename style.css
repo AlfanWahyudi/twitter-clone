@@ -497,7 +497,7 @@ main {
   min-height: 40px;
   grid-column: span 2;
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 40px 1fr;
   column-gap: 15px;
   align-items: center;
   justify-items: start;
@@ -721,6 +721,10 @@ main {
     margin-top: 6px;
     border-top: 1.5px solid #EFF3F4;
     grid-row: 3 / 4;
+  }
+
+  .card-show-thread {
+    grid-template-columns: 48px 1fr;
   }
 }
 
