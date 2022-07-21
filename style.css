@@ -295,6 +295,12 @@ main {
   border-top: 1.5px solid #EFF3F4;
 }
 
+.divider--vertical {
+  width: 2px;
+  min-height: 2em;
+  background-color: #CFD9DE;
+}
+
 .divider--m0 {
   margin: 0;
 }
@@ -333,10 +339,8 @@ main {
 }
 
 .card-article {
-  padding-top: 12px;
-  padding-bottom: 12px;
   grid-template-columns: auto 1fr;
-  gap: 15px;
+  column-gap: 15px;
   align-items: start;
 }
 
@@ -376,8 +380,15 @@ main {
   color: var(--blue);
 }
 
+.article-left-item,
+.article-right-item {
+  padding-top: 1rem;
+}
+
 .article-left-item {
-  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
 }
 
 .article-left-item .retweet-icon {
@@ -432,6 +443,20 @@ main {
   color: var(--black);
 }
 
+.article-tweet-hashtag, 
+.article-tweet-username, 
+.article-tweet-link {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.article-tweet-hashtag:hover, 
+.article-tweet-username:hover, 
+.article-tweet-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .tweet-images > img {
   width: 100%;
   height: auto;
@@ -439,8 +464,9 @@ main {
   border: 1px solid #CFD9DE;
 }
 
-.bottom {
-  height: 32px;
+.article-right-item .bottom {
+  padding-top: 7px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -459,6 +485,26 @@ main {
 .bottom .count {
   padding-left: 2px;
   font-size: 0.8125rem;
+}
+
+.card-article .divider--vertical {
+  flex-grow: 2;
+  height: auto;
+  margin: 3px auto 0 auto;
+}
+
+.card-show-thread {
+  min-height: 40px;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 15px;
+  align-items: center;
+  justify-items: start;
+}
+
+.card-show-thread img {
+  justify-self: center;
 }
 
 .floating-message {
