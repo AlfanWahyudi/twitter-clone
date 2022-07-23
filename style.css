@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 
 :root {
   --blue : #1DA1F2;
@@ -24,7 +24,7 @@ body {
   display: grid;
   background: #fff;
   overflow-x: hidden;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Roboto', sans-serif;
   max-width: 1250px;
   margin: 0 auto;
 }
@@ -854,6 +854,7 @@ main {
 
   .trend-title {
     font-size: 1.25rem;
+    font-weight: 900;
   }
 
   .card-trend {
@@ -894,7 +895,7 @@ main {
 
   .card-trend-middle {
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--black);
   }
 
@@ -929,6 +930,7 @@ main {
 
   .to-follow-title {
     font-size: 1.25rem;
+    font-weight: 900;
   }
 
   .card-to-follow {
@@ -1124,7 +1126,7 @@ main {
   .btn-nav-value {
     display: block;
     color: var(--black);
-    font-family: "Libre Franklin", sans-serif;;
+    font-family: 'Roboto', sans-serif;
   }
 
   nav ul li {
